@@ -1,0 +1,115 @@
+{
+    "services": [
+      {
+        "name": "Recording",
+        "slug": "recording",
+        "image": "recording.jpg",
+        "id": 1,
+        "description":
+          "Nahraj si svoje pesničky v profesionálnom štúdiu. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi",
+        "options": [
+          {
+            "name": "Solo",
+            "slug": "solo",
+            "image": "solo-recording.jpg",
+            "description":
+              "Celé štúdio len pre teba. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          },
+          {
+            "name": "Engineer",
+            "slug": "engineer",
+            "image": "engineer-recording.jpg",
+            "description":
+              "Nahrávaj po boku profesionálneho hudobného inžiniera. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"	
+          },
+          {
+            "name": "Band",
+            "slug": "band",
+            "image": "band-recording.jpg",
+            "description":
+              "Nahrávajte 2 alebo viacerí v profesionálnom štúdiu. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          }
+        ]
+      },
+      {
+        "name": "Rental",
+        "slug": "rental",
+        "image": "rental.jpg",
+        "id": 2,
+        "description":
+          "Vypožičaj si zvukovú techniku podľa tvojich potrieb. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi",
+        "options": [
+          {
+            "name": "Console",
+            "slug": "console",
+            "image": "console-rental.png",
+            "description":
+              "Vypožtičaj si profi DJ konzolu. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          },
+          {
+            "name": "Microphone",
+            "slug": "microphone",
+            "image": "mic-rental.jpg",
+            "description":
+              "Vypožičaj si profesionálny mikrofón. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          },
+          {
+            "name": "Monitors",
+            "slug": "monitors",
+            "image": "monitors-rental.jpg",
+            "description":
+              "Vypožičaj si vysokokvalitné štúdiové monitory. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          }
+        ]
+      },
+      {
+        "name": "Mixing",
+        "slug": "mixing",
+        "image": "mixing.jpg",
+        "id": 3,
+        "description":
+          "Nechaj si zmixovať svoje pesničky profesionálnym hudobným inžinierom. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi",
+        "options": [
+          {
+            "name": "SingleMixing",
+            "slug": "singlemixing",
+            "image": "single-mixing.jpg",
+            "description":
+              "Suspendisse lobortis pharetra tempor. Cras eleifend ante sed arcu interdum, in bibendum enim ultricies. Integer rutrum quis risus at tempor. Maecenas facilisis, nisi vel pellentesque maximus, lectus felis malesuada purus, a pulvinar elit est quis turpis. Duis convallis purus quis finibus consequat. Pellentesque faucibus tincidunt augue non consequat. Donec fringilla at est sit amet blandit. Nunc at porttitor ligula. Fusce sed odio turpis. Suspendisse lobortis pharetra tempor. Cras eleifend ante sed arcu interdum, in bibendum enim ultricies. Integer rutrum quis risus at tempor. Maecenas facilisis, nisi vel pellentesque maximus, lectus felis malesuada purus, a pulvinar elit est quis turpis. Duis convallis purus quis finibus consequat. Pellentesque faucibus tincidunt augue non consequat. Donec fringilla at est sit amet blandit. Nunc at porttitor ligula. Fusce sed odio turpis."
+          },
+          {
+            "name": "MultipleMixing",
+            "slug": "multiplemixing",
+            "image": "multiple-mixing.jpg",
+            "description":
+              "Nechaj si zmixovať 2 a viac pesničiek. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          }
+        ]
+      },
+      {
+        "name": "Mastering",
+        "slug": "mastering",
+        "image": "mastering.jpg",
+        "id": 4,
+        "description":
+          "Postaráme sa ti o to aby tvoje pesničky zneli ako od profesionálov. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi",
+        "options": [
+          {
+            "name": "SingleMastering",
+            "slug": "singlemastering",
+            "image": "mastering.jpg",
+            "description":
+              "Zmasterujeme ti jednu pesničku. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          },
+          {
+            "name": "MultipleMastering",
+            "slug": "multiplemastering",
+            "image": "multiple-mastering.jpg",
+            "description":
+              "Zmasterujeme ti 2 a viac pesničiek. Nam fermentum, leo ac lobortis tincidunt, justo felis semper nisi, sed facilisis quam ante a justo. Nam pulvinar nibh nec mi"
+          }
+        ]
+      }
+    ]
+  }
+  
