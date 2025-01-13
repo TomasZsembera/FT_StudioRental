@@ -4,6 +4,10 @@
       <h1>Welcome to Our Services</h1>
       <p class="lead">Explore our wide range of professional services designed to meet your needs.</p>
     </div>
+    <sliderComponent />
+    <br>
+    <br>
+    <br>
     <div class="row">
       <div class="col-md-4 mb-4" v-for="service in services" :key="service.slug">
         <div class="card h-100">
@@ -22,6 +26,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import data from '../../data.json';
+import sliderComponent from '../components/sliderComponent.vue';
 
 const services = ref(data.services);
 </script>
