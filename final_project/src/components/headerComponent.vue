@@ -31,18 +31,20 @@ import data from '../../data.json';
 
 export default {
   name: 'HeaderComponent',
-  setup() {
-    const services = ref(data.services);
-    const route = useRoute();
-
-    const isActive = (path) => {
-      return route.path === path;
-    };
-
+  data() {
     return {
-      services,
-      isActive,
+      services: data.services,
     };
+  },
+  computed: {
+    route() {
+      return useRoute();
+    },
+  },
+  methods: {
+    isActive(path) {
+      return this.route.path === path;
+    },
   },
 };
 </script>

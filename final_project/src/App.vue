@@ -8,7 +8,7 @@ import GoBackComponent from './components/goBackComponent.vue'
 <template>
   <div id="app" class="d-flex flex-column min-vh-100">
   <header>
-    <headerComponent />
+    <headerComponent  />
   </header>
   <main class="flex-grow-1">
   <GoBackComponent />

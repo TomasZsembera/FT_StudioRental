@@ -30,17 +30,18 @@
 import { useReservationsStore } from '../stores/reservations';
 
 export default {
-  setup() {
+  name: 'RentalsView',
+  data() {
     const store = useReservationsStore();
-    
-    const cancelReservation = (reservation) => {
-      store.removeReservation(reservation);
-    };
-
     return {
       reservations: store.reservations,
-      cancelReservation,
     };
+  },
+  methods: {
+    cancelReservation(reservation) {
+      const store = useReservationsStore();
+      store.removeReservation(reservation);
+    },
   },
 };
 </script>
