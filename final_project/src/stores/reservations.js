@@ -8,5 +8,12 @@ export const useReservationsStore = defineStore('reservations', {
     addReservation(reservation) {
       this.reservations.push(reservation);
     },
+
+    removeReservation(reservation) {
+      const index = this.reservations.indexOf(reservation);
+      this.reservations.splice(index, 1);
+    },
   },
+
+
 });

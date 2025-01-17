@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/">Your Company</RouterLink>
+      <RouterLink class="navbar-brand" to="/">
+        <img src="/images/logo.png" alt="Your Company Logo" style="width: 40px; height: 40px; border-radius: 50%;" />
+      </RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
