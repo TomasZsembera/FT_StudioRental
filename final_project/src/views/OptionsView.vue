@@ -3,6 +3,21 @@
     <h1>{{ options.name }}</h1>
     <img :src="`/images/${options.image}`" :alt="options.name" class="img-fluid rounded mb-3" />
     <p>{{ options.description }}</p>
+    <form @submit.prevent="submitReservation">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" v-model="reservation.name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" v-model="reservation.email" required>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" v-model="reservation.date" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Reserve</button>
+    </form>
   </div>
   <div v-else>
     <p class="text-center">Option not found.</p>
@@ -10,6 +25,7 @@
 </template>
 
 <script>
+import { useReservationsStore } from '../stores/reservations';
 import data from '../../data.json';
 
 export default {
@@ -26,6 +42,12 @@ export default {
   data() {
     return {
       options: null,
+      reservation: {
+        name: '',
+        email: '',
+        date: '',
+        option: '',
+      },
     };
   },
   methods: {
@@ -37,7 +59,16 @@ export default {
         this.options = service.options.find(
           (options) => options.slug === this.optionsSlug
         );
+        this.reservation.option = this.options.name;
       }
+    },
+    submitReservation() {
+      const store = useReservationsStore();
+      store.addReservation({ ...this.reservation });
+      alert('Reservation submitted!');
+      this.reservation.name = '';
+      this.reservation.email = '';
+      this.reservation.date = '';
     },
   },
   mounted() {

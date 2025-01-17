@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ServiceView from '../views/ServiceView.vue';
 import OptionsView from '../views/OptionsView.vue';
+import RentalsView from '../views/RentalsView.vue';
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     name: 'options',
     component: OptionsView,
     props: route => ({ slug: route.params.slug, optionsSlug: route.params.optionId })
+  },
+  {
+    path: '/reservations',
+    name: 'reservations',
+    component: RentalsView,
   },
 ];
 
