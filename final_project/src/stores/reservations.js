@@ -3,6 +3,7 @@ import { defineStore } from 'pinia';
 export const useReservationsStore = defineStore('reservations', {
   state: () => ({
     reservations: JSON.parse(localStorage.getItem('reservations') || '[]'),
+    acceptedReservations: JSON.parse(localStorage.getItem('acceptedReservations') || '[]'),
   }),
   actions: {
     addReservation(reservation) {
@@ -16,8 +17,14 @@ export const useReservationsStore = defineStore('reservations', {
         this.saveToLocalStorage();
       }
     },
+    acceptReservation(reservation) {
+      this.removeReservation(reservation);
+      this.acceptedReservations.push(reservation);
+      this.saveToLocalStorage();
+    },
     saveToLocalStorage() {
       localStorage.setItem('reservations', JSON.stringify(this.reservations));
+      localStorage.setItem('acceptedReservations', JSON.stringify(this.acceptedReservations));
     },
   },
 });

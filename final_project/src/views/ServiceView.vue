@@ -22,6 +22,7 @@ import data from '../../data.json';
 import optionsComponent from '../components/optionsComponent.vue';
 
 export default {
+  name: 'ServiceView',
   components: { optionsComponent },
   data() {
     return {

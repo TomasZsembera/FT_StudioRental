@@ -35,6 +35,7 @@ import { useReservationsStore } from '../stores/reservations';
 import data from '../../data.json';
 
 export default {
+  name: 'OptionsView',
   props: {
     slug: {
       type: String,

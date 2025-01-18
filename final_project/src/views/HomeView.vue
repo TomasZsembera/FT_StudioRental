@@ -11,24 +11,33 @@
     <div class="row">
       <div class="col-md-4 mb-4" v-for="service in services" :key="service.slug">
         <div class="card h-100 card-hover">
-  <img :src="`/images/${service.image}`" class="card-img-top" :alt="service.name" />
-  <div class="card-body">
-    <h5 class="card-title">{{ service.name }}</h5>
-    <p class="card-text">{{ service.description }}</p>
-    <RouterLink :to="{ name: 'service', params: { slug: service.slug } }" class="btn btn-primary">Zistiť Viac</RouterLink>
-  </div>
-</div>
+          <img :src="`/images/${service.image}`" class="card-img-top" :alt="service.name" />
+          <div class="card-body">
+            <h5 class="card-title">{{ service.name }}</h5>
+            <p class="card-text">{{ service.description }}</p>
+            <RouterLink :to="{ name: 'service', params: { slug: service.slug } }" class="btn btn-primary">Zistiť Viac</RouterLink>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
+<script>
 import data from '../../data.json';
 import sliderComponent from '../components/sliderComponent.vue';
 
-const services = ref(data.services);
+export default {
+  name: 'HomeView',
+  components: {
+    sliderComponent,
+  },
+  data() {
+    return {
+      services: data.services,
+    };
+  },
+};
 </script>
 
 <style scoped>
